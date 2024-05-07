@@ -8,7 +8,7 @@ use Php\Primeiroprojeto\Models\Domain\Categoria;
 class CategoriaController{
 
     public function inserir($params){
-        require_once("../src/Views/Categoria/inserir_categoria.html");
+        require_once("../src/Views/categoria/inserir_categoria.html");
     }
 
     public function novo($params){
