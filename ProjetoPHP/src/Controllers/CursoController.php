@@ -8,7 +8,7 @@ use Php\Primeiroprojeto\Models\Domain\Curso;
 class CursoController{
 
     public function inserir($params){
-        require_once("../src/Views/Jogos/inserir_jogos.html");
+        require_once("../src/Views/Curso/inserir_curso.html");
     }
 
     public function novo($params){
