@@ -20,7 +20,7 @@
                     <input type="text" class="form-control" maxlength="60" name="nome" placeholder="Nome" value="<?= $resultado["nome"];  ?>">
 
                     <label for="valor" class="form-label">Valor</label>
-                    <input type="text" class="form-control" maxlength="60" name="valor" placeholder="valor" value="<?= $resultado["valor"];  ?>">
+                    <input type="text" class="form-control" maxlength="60" name="valor" placeholder="Valor" value="<?= $resultado["valor"];  ?>">
 
                     <label for="categoria" class="form-label">Categoria</label>
                     <input type="text" class="form-control" maxlength="60" name="categoria" placeholder="Categoria" value="<?= $resultado["categoria"];  ?>">
