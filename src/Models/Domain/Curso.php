@@ -8,15 +8,13 @@ class Curso {
     private $nome;
     private $descricao;
     private $tempo;
-    private $categoria;
 
-    public function __construct($id, $nome, $descricao, $tempo, $categoria)
+    public function __construct($id, $nome, $descricao, $tempo)
     {
         $this->setId($id);
         $this->setNome($nome);
         $this->setDescricao($descricao);
         $this->setTempo($tempo);
-        $this->setCategoria($categoria);
     }
 
     public function getId() {
@@ -49,14 +47,6 @@ class Curso {
 
     public function SetTempo($tempo) {
         $this->tempo = $tempo;
-    }
-
-    public function getCategoria() {
-        return $this->categoria;
-    }
-
-    public function SetCategoria($categoria) {
-        $this->categoria = $categoria;
     }
 
 }
