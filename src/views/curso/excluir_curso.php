@@ -22,7 +22,7 @@
                     <label for="descricao" class="form-label">Descrição</label>
                     <input type="text" disabled class="form-control" maxlength="60" name="descricao" placeholder="Descricao" value="<?= $resultado["descricao"];  ?>">
 
-                    <label for="tempo" class="form-label">Duração</label>
+                    <label for="tempo" class="form-label">Tempo</label>
                     <input type="number" disabled class="form-control" maxlength="60" name="tempo" placeholder="Tempo" value="<?= $resultado["tempo"];  ?>">
 
   
