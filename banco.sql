@@ -20,27 +20,6 @@ SET time_zone = "+00:00";
 --
 -- Banco de dados: `mydb`
 --
-
--- --------------------------------------------------------
-
---
--- Estrutura para tabela `categoria`
---
-
-CREATE TABLE `categoria` (
-  `id` int(11) NOT NULL,
-  `descricao` varchar(150) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
-
---
--- Despejando dados para a tabela `categoria`
---
-
-INSERT INTO `categoria` (`id`, `descricao`) VALUES
-(12, 'Tecnologia'),
-(13, 'Exatas'),
-(14, 'Agropecuaria');
-
 -- --------------------------------------------------------
 
 --
@@ -121,28 +100,21 @@ CREATE TABLE `curso` (
   `id` int(11) NOT NULL,
   `nome` varchar(60) NOT NULL,
   `descricao` varchar(256) NOT NULL,
-  `tempo` decimal(10,2) NOT NULL,
-  `categoria_curso` varchar(60) NOT NULL
+  `tempo` int NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Despejando dados para a tabela `curso`
 --
 
-INSERT INTO `curso` (`id`, `nome`, `descricao`, `tempo`, `categoria_curso`) VALUES
-(1, 'Desenvolvimento de sistemas', 'Curso sobre como desnvolver sistemas', '360', 'Tecnologia'),
-(2, 'Agronegocio', 'Curso sobre como funciona o agronegocio', '300', 'Agropecuaria'),
-(3, 'Agronomia', 'Curso sobre como funciona a agronomia', '300', 'Agropecuaria'),
-(4, 'Quimica avançada', 'Curso sobre como usar quimica avancada', '120', 'Exatas');
+INSERT INTO `curso` (`id`, `nome`, `descricao`, `tempo`) VALUES
+(1, 'Desenvolvimento de sistemas', 'Curso sobre como desnvolver sistemas', '360'),
+(2, 'Agronegocio', 'Curso sobre como funciona o agronegocio', '300'),
+(3, 'Agronomia', 'Curso sobre como funciona a agronomia', '300'),
+(4, 'Quimica avançada', 'Curso sobre como usar quimica avancada', '120');
 --
 -- Índices para tabelas despejadas
 --
-
---
--- Índices de tabela `categoria`
---
-ALTER TABLE `categoria`
-  ADD PRIMARY KEY (`id`);
 
 --
 -- Índices de tabela `aluno`
@@ -171,12 +143,6 @@ ALTER TABLE `curso`
 --
 -- AUTO_INCREMENT para tabelas despejadas
 --
-
---
--- AUTO_INCREMENT de tabela `categoria`
---
-ALTER TABLE `categoria`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=16;
 
 --
 -- AUTO_INCREMENT de tabela `aluno`
