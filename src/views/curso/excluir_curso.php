@@ -22,12 +22,10 @@
                     <label for="descricao" class="form-label">Descrição</label>
                     <input type="text" disabled class="form-control" maxlength="60" name="descricao" placeholder="Descricao" value="<?= $resultado["descricao"];  ?>">
 
-                    <label for="tempo" class="form-label">Tempo</label>
+                    <label for="tempo" class="form-label">Duração</label>
                     <input type="number" disabled class="form-control" maxlength="60" name="tempo" placeholder="Tempo" value="<?= $resultado["tempo"];  ?>">
 
-                    <label for="categoria" class="form-label">Categoria</label>
-                    <input type="text" class="form-control" maxlength="60" name="categoria" placeholder="Categoria" value="<?= $resultado["categoria"];  ?>">
-                </div>
+  
             </div>
             <p>Você deseja realmente excluir esse registro?</p>
             <button type="submit" class="btn btn-danger">Excluir</button>
