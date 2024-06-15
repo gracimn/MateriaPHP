@@ -74,7 +74,6 @@
                 <th>Nome</th>
                 <th>Descricao</th>
                 <th>Tempo</th>
-                <th>Categoria</th>
                 <th>Ações</th>
             </thead>
             <tbody>
@@ -83,7 +82,6 @@
                         <td><?= $c['nome'] ?></td>
                         <td><?= $c['descricao'] ?></td>
                         <td><?= $c['tempo'] ?></td>
-                        <td><?= $c['categoria'] ?></td>
                         <td>
                             <a href="/curso/alterar/id/<?= $c["id"] ?>" class="btn btn-sm btn-warning">Alterar</a>
                             <a href="/curso/excluir/id/<?= $c["id"] ?>" class="btn btn-sm btn-danger">Excluir</a>
