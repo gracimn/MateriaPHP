@@ -65,8 +65,8 @@
         <?php } ?>
         
         <div class="d-flex justify-content-between">
-            <h3>Fornecedor</h3>
-            <a href="/fornecedor/inserir" class="btn btn-primary"> <i class="fas fa-plus"></i> Novo fornecedor</a>
+            <h3>Professor</h3>
+            <a href="/professor/inserir" class="btn btn-primary"> <i class="fas fa-plus"></i> Novo professor</a>
         </div>
 
         <table class="table table-stripped table-hover mt-5" id="tabela">
@@ -85,8 +85,8 @@
                         <td><?= $c['materia'] ?></td>
                         <td><?= $c['email'] ?></td>
                         <td>
-                            <a href="/fornecedor/alterar/id/<?= $c["id"] ?>" class="btn btn-sm btn-warning">Alterar</a>
-                            <a href="/fornecedor/excluir/id/<?= $c["id"] ?>" class="btn btn-sm btn-danger">Excluir</a>
+                            <a href="/professor/alterar/id/<?= $c["id"] ?>" class="btn btn-sm btn-warning">Alterar</a>
+                            <a href="/professor/excluir/id/<?= $c["id"] ?>" class="btn btn-sm btn-danger">Excluir</a>
                         </td>
                     </tr>
                 <?php } ?>
