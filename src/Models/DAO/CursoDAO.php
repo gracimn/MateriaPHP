@@ -14,13 +14,12 @@ class CursoDAO {
 
     public function inserir(Curso $curso) {
         try {
-            $sql = "INSERT INTO curso (nome, descricao, tempo, categoria) VALUES (:nome, :descricao, :tempo, :categoria)";
+            $sql = "INSERT INTO curso (nome, descricao, tempo) VALUES (:nome, :descricao, :tempo)";
             // agora a variável PDO tá dentro do objeto conexão
             $p = $this->conexao->getConexao()->prepare($sql); // $p de prepare conexao
             $p->bindValue(":nome", $curso->getNome());
             $p->bindValue(":descricao", $curso->getDescricao());
             $p->bindValue(":tempo", $curso->getTempo());
-            $p->bindValue(":categoria", $curso->getCategoria());
             return $p->execute();
         } catch (\Exception $e) {
             return 0;
@@ -32,14 +31,12 @@ class CursoDAO {
             $sql = "UPDATE curso
                     SET nome = :nome,
                     descricao = :descricao,
-                    tempo = :tempo,
-                    categoria = :categoria
+                    tempo = :tempo
                     WHERE id = :id";
             $p = $this->conexao->getConexao()->prepare($sql);
             $p->bindValue(":nome", $curso->getNome());
             $p->bindValue(":descricao", $curso->getDescricao());
             $p->bindValue(":tempo", $curso->getTempo());
-            $p->bindValue(":categoria", $curso->getCategoria());
 
             $p->bindValue(":id", $curso->getId());
             return $p->execute();
