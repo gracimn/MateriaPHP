@@ -43,7 +43,7 @@ class CursoController {
     }
 
     public function novo($params) {
-        $curso = new Curso(0, $_POST["nome"], $_POST["descricao"], $_POST["tempo"],  $_POST["categoria"]);
+        $curso = new Curso(0, $_POST["nome"], $_POST["descricao"], $_POST["tempo"]);
         $cursoDAO = new CursoDAO();
         if ($cursoDAO->inserir($curso)) {
             header("location: /curso/inserir/true");
@@ -66,7 +66,7 @@ class CursoController {
     }
 
     public function editar($params) {
-        $curso = new Curso($_POST['id'], $_POST["nome"], $_POST['descricao'], $_POST['tempo'], $_POST['categoria']);
+        $curso = new Curso($_POST['id'], $_POST["nome"], $_POST['descricao'], $_POST['tempo']);
         $cursoDAO = new CursoDAO();
         if ($cursoDAO->alterar($curso)) {
             header("location: /curso/alterar/true");
