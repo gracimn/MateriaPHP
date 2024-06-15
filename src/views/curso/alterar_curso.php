@@ -25,9 +25,6 @@
                     <label for="tempo" class="form-label">Tempo</label>
                     <input type="number" class="form-control" maxlength="60" name="tempo" placeholder="Tempo" value="<?= $resultado["tempo"];  ?>">
 
-                    <label for="categoria" class="form-label">Categoria</label>
-                    <input type="text" class="form-control" maxlength="60" name="categoria" placeholder="Categoria" value="<?= $resultado["categoria"];  ?>">
-
                 </div>
             </div>
             <button type="submit" class="btn btn-primary">Salvar</button>
