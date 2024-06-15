@@ -106,7 +106,7 @@ CREATE TABLE `professor` (
 -- Despejando dados para a tabela `professor`
 --
 
-IINSERT INTO `professor` (`id`, `nome`, `idade`, `materia`, `email`) VALUES
+INSERT INTO `professor` (`id`, `nome`, `idade`, `materia`, `email`) VALUES
 (1, 'Professor A', 35, 'Matemática', 'professorA@email.com'),
 (2, 'Professor B', 42, 'Física', 'professorB@email.com'),
 (3, 'Professor C', 29, 'Química', 'professorC@email.com');
@@ -122,14 +122,14 @@ CREATE TABLE `curso` (
   `nome` varchar(60) NOT NULL,
   `descricao` varchar(256) NOT NULL,
   `tempo` decimal(10,2) NOT NULL,
-  `categoria` varchar(60) NOT NULL
+  `categoria_curso` varchar(60) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_general_ci;
 
 --
 -- Despejando dados para a tabela `curso`
 --
 
-INSERT INTO `curso` (`id`, `nome`, `descricao`, `tempo`, `categoria`) VALUES
+INSERT INTO `curso` (`id`, `nome`, `descricao`, `tempo`, `categoria_curso`) VALUES
 (1, 'Desenvolvimento de sistemas', 'Curso sobre como desnvolver sistemas', '360', 'Tecnologia'),
 (2, 'Agronegocio', 'Curso sobre como funciona o agronegocio', '300', 'Agropecuaria'),
 (3, 'Agronomia', 'Curso sobre como funciona a agronomia', '300', 'Agropecuaria'),
